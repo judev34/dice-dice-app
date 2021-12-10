@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Dice Baby</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>    
+        tailwind.config = {      
+            theme: {        
+                extend: {          
+                    colors: {            
+                        clifford: '#da373d',          
+                    }        
+                }      
+            }    
+        }  
+    </script>
+</head>
+<body>
+    <div class="flex flex-col h-screen w-screen">
+        <div class="flex flex-row w-full h-full">
+            <div class="board w-3/6 h-full bg-orange-600">
+                <div class="player-score"></div>
+            </div>
+            <div class="flex flex-col chat w-3/6 h-full"> 
+                <div class="bg-gray-300 h-full overflow-y-auto">
+                    <div class="flex justify-center bg-blue-400 text-white">
+                        <h4>Messages</h4>
+                    </div>
+                    <ul class="list-none">
+                        <li class="bg-gray-200">You think water moves fast? You should see ice.</li>
+                        <li>You think water moves fast? You should see ice.</li>
+                        <li>You think water moves fast? You should see ice.</li>
+                        <li>You think water moves fast? You should see ice.</li>
+                        <li>You think water moves fast? You should see ice.</li>
+                        
+                    </ul>
+                </div>
+                <div class="flex w-full">
+                    <input class="w-full" type="text" name="message" placeholder="Entrez votre message">
+                    <button class="bg-blue-500 text-white">Send</button>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center justify-center bg-yellow-500 w-full h-2/5">
+            <div>THIS IS THE DICE</div>
+            <button class="bg-lime-500 border-2 border-lime-700 rounded-full w-20 h-20 p-2 text-white text-center transition hover:bg-lime-700 duration-500">Throw dice</button>
+        </div>   
+    </div>
+    
+
+</body>
+</html>
